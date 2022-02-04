@@ -6,10 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESTILO CSS:: DESAFIO LATAM</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* 3 formas de aplicar estilos */
+        /* estilo por elemento, todos se ven afectados */
+        
+        p {
+            color: #0000ff;
+            /* asigna color a la letra*/
+            background-color: #f0c8c8;
+            /* color de fondo del elemento */
+        }
+        /* por clase */
+        /* por ID, estilo unico al elemento */
+        
+        #parra3 {
+            color: rgb(226, 43, 43);
+        }
+        
+        .pcolores {
+            color: aqua;
+        }
+        
+        p {
+            color: #0000ff;
+            /* asigna color a la letra*/
+            background-color: #f0c8c8;
+            /* color de fondo del elemento */
+        }
+    </style>
+
+
 </head>
 
 <body>
+    <div>
+        <p>Parrafo 1</p>
+        <p class="pcolores">Parrafo 2</p>
+        <p class="pcolores" id="parra3">Parrafo 3</p>
+        <p class="pcolores">Parrafo 4</p>
 
+    </div>
 </body>
 
 </html>
