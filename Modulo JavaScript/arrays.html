@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function dibujar() {
+            let perros = [{
+                raza: 'Pastor Alemán',
+                origen: 'Alemania',
+                pelaje: 'Lanudo',
+                peso: '33kg',
+                edad: 12
+            }, {
+                raza: 'Poodle',
+                origen: 'Francia',
+                pelaje: 'Lanudo',
+                peso: '20kg',
+                edad: 14
+            }, ];
+            console.dir(perros);
+            //pintar la tabla dinamicamente
+            var body = document.getElementsByTagName("body");
+            body[0].innerHTML =
+                "<table>" +
+                "<thead><tr id='atributo'></tr></thead>" +
+                "<tbody id='tablaBody'></tbody>" +
+                "</table>";
+            //obtener los atributos
+
+            // recorrer valores de un objeto
+            var llaves = Object.keys(perros[0]);
+            console.log("llaves ", llaves);
+
+            var valores = Object.values(perros[0]);
+            console.log("Valores", valores);
+
+            var parValores = Object.entries(perros[0]);
+            console.log("par valores", parValores);
+            // ------------------------------------------------         
+            var titulosTabla = "";
+            for (let atributo in perros[0]) {
+                console.log(atributo);
+                //<th>atributo</th>
+                titulosTabla = titulosTabla + "<th>" + atributo + "</th>";
+            }
+            console.log(titulosTabla);
+            var titulos = document.getElementById('atributo');
+            titulos.innerHTML = titulosTabla;
+
+            //obtener los valores de los atributos
+            //<tr><td></td><td></td><td></td><td></td><td></td></tr>
+            var filas = "";
+            for (let i = 0; i < perros.length; i++) {
+                let valores = "";
+                for (let atributo in perros[i]) {
+                    perros[i].atributo
+                        //<td>valor</td>
+                    valores = valores + "<td>" + perros[i][atributo] + "</td>";
+                }
+                //<tr>valores</tr>
+                filas = filas + "<tr>" + valores + "</tr>";
+            }
+            document.getElementById("tablaBody").innerHTML = filas;
+
+        }
+    </script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <button onclick="dibujar()">Dibujar</button>
+
+
+
+</body>
+
+</html>

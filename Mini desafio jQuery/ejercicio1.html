@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#caja1').ckick(function() {
+                $('#caja2').css('backgroundColor', 'blue');
+                alert();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <div id="caja1" style="background-color:red;border: 1px solid gray;margin:10px;padding: 10px">
+                <span>haz click!!!</span>
+            </div>
+            <div id="caja2" style="background-color:white;border: 1px solid gray;margin:10px;padding: 10px">
+                <span>Cambiame</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>04 - Eventos</title>
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mr-auto navegacion">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+					Dropdown
+				  </a>
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Something else here</a>
+				  </div>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link disabled">Disabled</a>
+				</li>
+			  </ul>
+			  <form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2 busqueda" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			  </form>
+			</div>
+		</div>
+	  </nav>
+
+
+		<div class="container my-5">
+
+			<h3 class="display-5 font-weight-bold mb-3">Disparar un evento</h3>
+			<div class="row mb-5">
+				<div class="col-md-12">
+
+					<button type="button" id="opcionUno" class="btn btn-primary">Opción 1</button>
+					<button type="button" id="opcionDos" class="btn btn-secondary">Opcion 2</button>
+					<button type="button" id="opcionTres" class="btn btn-success" onclick="respuestaClickOpcionTres()">Opción 3</button>
+			
+				</div>
+			</div>
+
+			<h3 class="display-5 font-weight-bold mb-3">Ejercicio de Formualario</h3>
+			<hr>
+
+			<form action="" method="POST" id="formulario">
+
+				<div class="form-group">
+					<label for="nombre">Nombre</label>
+					<input type="text" class="form-control" id="nombre">
+					<div class="alert alert-danger my-2" role="alert" id="error_nombre">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="apellidos">Apellidos</label>
+					<input type="text" class="form-control" id="apellido">
+					<div class="alert alert-danger my-2" role="alert" id="error_apellidos">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="edad">Edad</label>
+					<input type="text" class="form-control" id="edad">
+					<div class="alert alert-danger my-2" role="alert" id="error_edad">
+					</div>
+				</div>
+				
+				<input type="submit" value="Enviar" id="submit" class="btn btn-primary">
+			
+			</form>
+
+			<div class="alert alert-secondary my-5" role="alert" id="alerta">
+				<h3>Información del Usuario</h3>
+				<hr>
+				<p class="font-weight-bold">
+					Nombre: <span class="font-weight-light" id="infoNombre"></span>
+				</p>
+
+				<p class="font-weight-bold">
+					Apellido: <span class="font-weight-light" id="infoApellido"></span>
+				</p>
+
+				<p class="font-weight-bold">
+					Edad: <span class="font-weight-light" id="infoEdad"></span>
+				</p>
+			</div>
+			
+		</div>
+
+
+
+		<script src="./assets/js/01-ejercicio-DOM-Eventos-funciones.js"></script> 
+		
+
+		<script>
+			function respuestaClickOpcionTres(e){
+				console.log('Se ejecuta la respuesta de opcion tres desde el HTML')
+			}
+		</script>
+		<!-- INFO MODAL -->
+		<!-- Modal -->
+		<div class="modal fade" id="infoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				...
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Understood</button>
+				</div>
+			</div>
+			</div>
+		</div>
+</body>
+</html>

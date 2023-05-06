@@ -1,0 +1,96 @@
+body {
+    Font-family: 'Roboto', sans-serif;
+}
+
+
+/* imagen barra navegacion */
+
+.navbar-brand img {
+    width: 86px;
+}
+
+
+/* margen tarjetas */
+
+.card {
+    margin: 0 auto;
+}
+
+
+/* titulo de las tarjetas */
+
+.card-title {
+    font-size: 20px;
+    color: #212529;
+    font-weight: 300;
+}
+
+
+/* texto de las tarjetas */
+
+.card-text {
+    font-weight: 80;
+    color: #707070;
+    margin: 0;
+}
+
+
+/* ubicacion */
+
+.card-text2 {
+    font-size: 13px;
+    color: #707070;
+    font-weight: 80;
+}
+
+.precio-1 {
+    font-weight: 300;
+    color: #707070;
+    display: inline-block;
+}
+
+.precio-2 {
+    font-size: 20px;
+    font-weight: 62px;
+    display: inline-block;
+    color: #28a745;
+}
+
+form {
+    margin: 0 auto;
+}
+
+.form-control {
+    color: #707070;
+    font-weight: 300;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btn {
+    color: #212529;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    width: 82px;
+    padding-top: 30px;
+}
+
+footer p {
+    color: #707070;
+    font-weight: 300;
+}

@@ -1,0 +1,73 @@
+    .body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+    /* color de fondo barra de navegación */
+    
+    .bg-rosa {
+        background-color: #e83e8c;
+    }
+    /* color de fondo contenedor de tarjetas */
+    
+    .bg-icono {
+        background-color: #17A2B8;
+    }
+    
+    .logo-imagen {
+        max-height: 50px;
+    }
+    
+    .hero h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+        color: #707070;
+    }
+    
+    .card-body h5 {
+        font-size: 17px;
+        font-weight: bold;
+        color: #212529;
+    }
+    
+    .card-body a {
+        font-size: 11px;
+        font-weight: 400;
+        color: #1C7CD5;
+        text-decoration: none;
+    }
+    
+    .card-body p {
+        font-weight: 400;
+        color: #212529;
+    }
+    
+    .list-group-item {
+        font-size: 11px;
+        font-weight: 400;
+        color: #212529;
+    }
+    
+    .icons-section {
+        color: white;
+        font-size: 2.5em;
+    }
+    
+    .fa-iconos {
+        font-size: 1.5em;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .pagos h2 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-align: right;
+    }
+    
+    .logo-footer {
+        max-height: 100px;
+    }

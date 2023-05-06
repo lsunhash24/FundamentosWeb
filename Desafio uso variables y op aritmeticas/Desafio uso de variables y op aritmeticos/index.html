@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso variables y op aritmeticos</title>
+    <script>
+        // Operaciones aritmeticas
+        // Se crean dos variables con valores ingresados por el usuario
+        // se convierte los valores capturados a tipo numerico
+        var num1 = parseInt(prompt("Ingresa primer número mayor que 0: "));
+        var num2 = parseInt(prompt("Ingresa segundo numero mayor que 0: "));
+        // Se suman los valores obtenidos en una variable llamada "resultado" 
+        var resultado = num1 + num2;
+        // Se restan los valores obtenidos en una variable llamada "resultado2" 
+        var resultado2 = num1 - num2;
+        // Se multiplican los valores obtenidos en una variable llamada "resultado3" 
+        var resultado3 = num1 * num2;
+        // Se dividen los valores obtenidos en una variable llamada "resultado4" 
+        var resultado4 = num1 / num2;
+        // Se obtiene el modulo de los valores obtenidos en una variable llamada "resultado8" 
+        var resultado8 = num1 % num2;
+
+        // Se muestra el resultado de la suma por consola
+        console.log('La suma de los numeros ingresados es: ' + resultado);
+        // Se muestra el resultado de la resta por consola
+        console.log('La resta de los numeros ingresados es: ' + resultado2);
+        // Se muestra el resultado de la resta por consola
+        console.log('La multiplicacion de los numeros ingresados es: ' + resultado3);
+        // Se muestra el resultado de la resta por consola
+        console.log('La division de los numeros ingresados es: ' + resultado4);
+        // Se muestra el resultado del modulo consola
+        console.log('El modulo de los numeros ingresados es: ' + resultado8);
+
+        //3. Crear un programa que pida al usuario ingresar la temperatura en grados Celsius y
+        //   que la transforme a grados Kelvin y Fahrenheit. 
+
+        // Se crean una variable con valor ingresado por el usuario
+        // se convierte el valor capturado a tipo numerico
+        var num3 = parseInt(prompt("Ingrese grados celsius mayor o igual a 0: "));
+        // se convierte a grados Kelvin y se almacena el valor en la variable resultado5
+        var resultado5 = num3 + 273.15;
+        // se convierte a grados Fahrenheit y se almacena el valor en la variable resultado6
+        var resultado6 = num3 * (9 / 5) + 32;
+        console.log('Grados Kelvin= ' + resultado5 + '°');
+        // Se muestra el resultado de la resta por consola
+        console.log('Grados Fahrenheit= ' + resultado6 + '°');
+
+        /*4. Crear un programa que pida al usuario una cantidad de días y que muestre su
+             equivalente en Años, Semanas y Días. Por ejemplo, si el usuario ingresa 373, el
+             resultado debe ser 1 año, 1 semana y 1 día.*/
+
+        // Se crean una variable con valor ingresado por el usuario
+        // se convierte el valor capturado a tipo numerico
+        var num4 = parseInt(prompt("Ingrese numero de dias mayor o igual a 365 para convertir: "));
+        // se obtiene la parte entera de la division entre el numero ingresado
+        // por el usuario y 365, este valor se almacena en la variable anio,
+        var anio = Math.floor(num4 / 365);
+        //se almacena en la variable "semana" el numero de semanas 
+        var semana = Math.floor((num4 - 365) / 7);
+        // se almacena en la variable "dias" el numero de dias restantes
+        var dias = (num4 - 365) % 7
+            // se imprime por consola el numero de años, semanas y dias 
+        console.log(`La cantidad de años es: ${anio}`);
+        console.log(`La cantidad de semanas es: ${semana}`);
+        console.log(`La cantidad de dias es: ${dias}`);
+
+        //5. Crear un programa que solicite al usuario 5 números y realice los cálculos que se
+        //   piden a continuación.
+        // se crean variables con datos ingresados por el usuario
+        var num5 = parseInt(prompt("Ingresa primer número mayor que 0: "));
+        var num6 = parseInt(prompt("Ingresa segundo numero mayor que 0: "));
+        var num7 = parseInt(prompt("Ingresa tercer número mayor que 0: "));
+        var num8 = parseInt(prompt("Ingresa cuarto numero mayor que 0: "));
+        var num9 = parseInt(prompt("Ingresa quinto mayor que 0: "));
+        // se suman los valores ingresados y se almacena ek valor en la variable resultado7
+        var resultado7 = num5 + num6 + num7 + num8 + num9;
+        // se calcula el promedio del resultado anterior dividido por 5, se almacena el 
+        // el valor en la variable "promedio"
+        var promedio = resultado7 / 5;
+        // se imprimen los resultados por consola 
+        console.log(`La suma de los valores ingresados es ${resultado7}`);
+        console.log(`El promedio de los valores ingresados es ${promedio}`);
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

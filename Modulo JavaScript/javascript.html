@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Formulario</title>
+
+    <script>
+        function validarFormulario() {
+            var estado = false;
+            //alert("Funciona el llamado desde html");
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var usuario = document.getElementById("usuario").value;
+            var server = document.getElementById("server").value;
+            var pass = document.getElementById("inputPassword").value;
+            var pass2 = document.getElementById("inputPassword2").value;
+            var fnacimiento = document.getElementById("fnacimiento").value;
+            //alert(`su nombre es: ${nombre}`);
+
+            if (nombre == "") {
+                alert("El nombre no puede estar vacio");
+                document.getElementById("nombre").select();
+            } else if (apellido == "") {
+                alert("El apellido no puede estar vacio");
+                document.getElementById("apellido").select();
+            } else if (usuario == "") {
+                alert("El nombre de usuario no puede estar vacio");
+                document.getElementById("usuario").select();
+            } else if (server == "") {
+                alert("Ingrese email");
+                document.getElementById("server").select();
+            } else if (pass == "") {
+                alert("El Password no puede estar vacio");
+                document.getElementById("inputPassword").select();
+            } else if (pass2 == "") {
+                alert("El Password de confirmacion no puede estar vacio");
+                document.getElementById("inputPassword").select();
+                validarPassword(pass, pass2);
+            } else if (fnacimiento == "") {
+                alert("Ingrese fecha de nacimiento");
+                document.getElementById("fnacimiento").select();
+                validarFecha(fnacimiento)
+            } else if (estado = false) {
+                alert("Fecha incorrecta")
+
+            } else {
+                alert("Formulario correcto")
+            }
+        }
+
+        function validarPassword(pass, pass2) {
+            if (pass !== pass2) {
+                alert("Los password son distintos");
+                //limpiar el input
+                document.getElementById("inputPassword").value = "";
+                document.getElementById("inputPassword2").value = "";
+                document.getElementById("inputPassword").select();
+
+            }
+
+        }
+
+        function validarFecha(fnacimiento) {
+            estado = false;
+
+
+            /*try {
+                var fecha = fnacimiento.split("/");
+                var dia = fecha[0];
+                var mes = fecha[1];
+                var ano = fecha[2];
+
+
+                if ((dia.length == 2) && (mes.length == 2) && (ano.length == 4)) {
+                    switch (parseInt(mes)) {
+                        case 1:
+                            dmax = 31;
+                            break;
+                        case 2:
+                            if (ano % 4 == 0) dmax = 29;
+                            else dmax = 28;
+                            break;
+                        case 3:
+                            dmax = 31;
+                            break;
+                        case 4:
+                            dmax = 30;
+                            break;
+                        case 5:
+                            dmax = 31;
+                            break;
+                        case 6:
+                            dmax = 30;
+                            break;
+                        case 7:
+                            dmax = 31;
+                            break;
+                        case 8:
+                            dmax = 31;
+                            break;
+                        case 9:
+                            dmax = 30;
+                            break;
+                        case 10:
+                            dmax = 31;
+                            break;
+                        case 11:
+                            dmax = 30;
+                            break;
+                        case 12:
+                            dmax = 31;
+                            break;
+                    }
+
+                    dmax != "" ? dmax : dmax = -1;
+                    if ((dia >= 1) && (dia <= dmax) && (mes >= 1) && (mes <= 12)) {
+                        for (var i = 0; i < fecha[0].length; i++) {
+                            diaC = fecha[0].charAt(i).charCodeAt(0);
+                            (!((diaC > 47) && (diaC < 58))) ? estado = false: '';
+                            mesC = fecha[1].charAt(i).charCodeAt(0);
+                            (!((mesC > 47) && (mesC < 58))) ? estado = false: '';
+                        }
+
+                    }
+                    for (var i = 0; i < fecha[2].length; i++) {
+
+                        anoC = fecha[2].charAt(i).charCodeAt(0);
+
+                        (!((anoC > 47) && (anoC < 58))) ? estado = false: '';
+                    }
+                } else estado = false;
+                return estado, fecha;
+
+            } catch (err) {
+                alert("Error fechas");
+            }*/
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card mt-3">
+            <div class="card-body">
+
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+                </div>
+                <label for="email" class="form-label">Email</label><br>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="usuario" id="usuario" name="usuario" aria-label="Username">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="email.com" id="server" name="server" aria-label="Server">
+                </div>
+
+                <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Confirmar Password">
+                </div>
+
+                <div class="mb-3">
+                    <label for="fnacimiento" class="form-label">Cumpleaños</label>
+                    <input type="date" class="form-control" id="fnacimiento" name="fnacimiento" placeholder="Seleccione su fecha de nacimiento" </div>
+                </div>
+
+                <button type="button" class="btn btn-success" onclick="validarFormulario();"> Validar</button>
+
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

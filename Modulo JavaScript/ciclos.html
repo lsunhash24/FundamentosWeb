@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // numeros pares hasta el 20
+        var numerosImpares = 0; //variable contadora
+        for (let i = 0; i <= 20; i++) {
+
+            if (i == 10) {
+                continue;
+            }
+            if (i == 19) {
+                break;
+            }
+
+            if (i % 2 == 0) { //obtener pares
+                console.log('numero par', i);
+            } else {
+                numerosImpares++;
+            }
+        }
+
+        console.log(`cantidad numeros impares es ${numerosImpares}`);
+
+        numerosImpares = 0;
+        //while
+        var i = 0;
+
+        while (i <= 20) {
+            if (i == 10) {
+                i++;
+                continue;
+            }
+            if (i == 19) {
+                break;
+            }
+
+            if (i % 2 == 0) { //obtener pares
+                console.log('numero par', i);
+            } else {
+                numerosImpares++;
+            }
+            i++;
+        }
+        console.log(`cantidad numeros impares en while es ${numerosImpares}`);
+
+        /*Se solicita mostrar los números múltiplos de cuatro y
+        contar los números que no sean múltiplo de cuatro
+        mediante un ciclo do-while para los números
+        comprendidos entre el 1 y el 50 (incluidos ambos), pero
+        cuando se llegue al número 16, el programa debe
+        continuar y no mostrar el número en cuestión.
+        Igualmente, cuando se llegue al número 45 el ciclo debe
+        ser interrumpido y terminar su ejecución.*/
+
+        var j = 1;
+        var noMultiplosCuatro = 0;
+        do {
+            if (j == 16) {
+                j++;
+                continue;
+            }
+            if (j == 45) {
+                break;
+            }
+            if (j % 4 == 0) { //multiplos de 4
+                console.log(`numero multiplo de 4`, j)
+            } else {
+                noMultiplosCuatro++;
+            }
+            j++;
+        } while (j >= 1 && j <= 50);
+
+        document.write('<h2>numero no multiplos de 4 entre 1 y 45 </h2><br>');
+        document.write('cantidad es: ', noMultiplosCuatro);
+
+        /*Realizar un programa con JavaScript mediante el ciclo
+        while que muestre los números múltiplos de cinco y
+        cuente los números que no sean múltiplo de cinco, para
+        los números comprendidos entre el 0 y el 35 (incluidos
+        ambos). Cuando se llegue al número 10, el programa
+        debe continuar y no mostrar el número en cuestión,
+        igualmente, cuando se llegue al número 30 el ciclo debe
+        ser interrumpido y terminar su ejecución.*/
+
+        var k = 1;
+        var noMultiplosCinco = 0;
+        do {
+            if (k == 10) {
+                k++;
+                continue;
+            }
+            if (k == 30) {
+                break;
+            }
+            if (k % 5 == 0) { //multiplos de 5
+                console.log(`numero multiplo de 5`, k)
+            } else {
+                noMultiplosCinco++;
+            }
+            k++;
+        } while (k >= 1 && k <= 35);
+
+        document.write('<h2>numero no multiplos de 5 entre 1 y 30 </h2><br>');
+        document.write('cantidad es: ', noMultiplosCinco);
+
+        /* factorial del 1 al 10*/
+
+        var factorial = 1
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; i <= i; j++) {
+                factorial = factorial * j
+            }
+            console.log(`Factorial de ${j} es ${factorial}`)
+        }
+        for (let i = 1; i <= 5; i++) { //1,2,3,4,5
+            console.log("");
+            for (let j = 1; j <= 10; j++) { //1,2,3,4,5,6,7,8,9,10
+                if (i == j) {
+                    console.log(`${i} encontrado en j`);
+                    break;
+                }
+            }
+    </script>
+
+
+    }
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

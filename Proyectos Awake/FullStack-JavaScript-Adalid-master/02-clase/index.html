@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de HTML5</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- <style>
+        body{
+            background: coral;
+            color: blue;
+        }
+    </style> -->
+</head>
+<body>
+
+    <nav class="navegacion">
+        <ul>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+        </ul>
+    </nav>
+
+    <header>
+
+        <h1 style="color:aliceblue">Semántica de HTML5</h1>
+
+        <figure>
+            <img src="assets/img/imagen.png" alt="Hola">
+            <figcaption>Es el pie de página de la foto</figcaption>
+        </figure>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ea, sint corrupti ullam quisquam cumque et quod libero aliquam? Nulla dolor alias in ducimus deserunt suscipit, modi commodi tempora sint? <time datetime="23-03-2023">hoy</time> voy a ir a un concierto</p>
+
+        <video width="400" controls>
+            <source src="mov_bbb.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML video.
+        </video>
+
+        <hr>
+
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <hr>
+
+        <h3>Formulario</h3>
+        <!-- 
+            POST
+            PUT
+            GET
+            DELETE
+         -->
+        <form method="post" action="mail.php">
+
+            <label for="inputText">Nombre</label>
+            <input type="text" id="inputText" placeholder="Ingrese su nombre" required>
+
+            <label for="inputNumber">Edad</label>
+            <input type="number" id="inputNumber" placeholder="Ingrese su edad" required>
+
+            <label for="inputTel">Celular</label>
+            <input type="tel" id="inputTel" placeholder="Ingrese su celular" required>
+
+            <label for="inputTel">Fecha</label>
+            <input type="date" id="inputDate" placeholder="Ingrese una fecha" required>
+
+            <label for="inputTel">Busque una palabra</label>
+            <input type="search" id="inputDate" placeholder="Busque una palabra" required>
+
+            <label for="inputSelect">Seleccione una opción</label>
+            <select id="inputSelect">
+                <option value="rojo">Rojo</option>
+                <option value="verde">Verde</option>
+                <option value="azul">Azul</option>
+            </select>
+
+            <label for="inputColor">Seleccione una color</label>
+            <input type="color" id="inputColor">
+
+            <input type="submit" value="Enviar">
+
+        </form>
+        <hr>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Rut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alejandro</td>
+                    <td>Fernandez</td>
+                    <td>12.567.678-7</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </header>
+
+    <main>
+
+        <section>
+            <article>
+                <h3>Titulo 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ut dolore dolorum atque accusantium at, earum tempora sit quod corrupti quibusdam perspiciatis nihil et saepe libero soluta alias id vitae?</p>
+            </article>
+
+            <article>
+                <h3>Titulo 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ut dolore dolorum atque accusantium at, earum tempora sit quod corrupti quibusdam perspiciatis nihil et saepe libero soluta alias id vitae?</p>
+            </article>
+    
+            <article>
+                <h3>Titulo 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ut dolore dolorum atque accusantium at, earum tempora sit quod corrupti quibusdam perspiciatis nihil et saepe libero soluta alias id vitae?</p>
+            </article>
+
+            <aside>
+                <div class="article">
+                    <h3>El tiempo</h3>
+                    <ul>
+                        <li>30 Grados</li>
+                    </ul>
+                </div>
+            </aside>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vel ullam accusantium adipisci, dignissimos consectetur commodi dolores magnam recusandae aspernatur ab! Quas perspiciatis, optio facilis officiis facere quod quo recusandae?</p>
+    </footer>
+   
+</body>
+</html>

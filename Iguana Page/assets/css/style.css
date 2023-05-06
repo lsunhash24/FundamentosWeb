@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    border: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* Estilo del titulo */
+
+.titulo {
+    font-family: 'Raleway Medium', sans-serif;
+    font-size: 59px;
+    font-weight: 400;
+    margin: 7px 530px;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* Estilo imagen principal*/
+
+.primera-img img {
+    width: 100%;
+}
+
+
+/* Estilo de la decsripcion */
+
+.desc-section {
+    background-color: #000000;
+    margin: 0;
+    padding: 45px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.desc-text {
+    width: 52rem;
+    margin-left: 15rem;
+    display: inline-block;
+    font-family: 'Raleway Light', sans-serif;
+    font-weight: 400;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.desc-img {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    
+}
+
+.desc-img img {
+    width: 90%;
+}
+
+
+/* Estilo de los iconos */
+
+.seccion_iconos {
+    background-color: #1E1A13;
+    text-align: center;
+    padding: 60px 140px;
+}
+
+.seccion_iconos h2 {
+    font-weight: 300;
+    font-size: 47px;
+    margin-bottom: 1em;
+    font-family: 'Raleway Medium', sans-serif;
+}
+
+.icons {
+    display: inline-block;
+    width: 30%;
+}
+
+.icons p {
+    font-family: 'Raleway Light', sans-serif;
+    font-weight: 108x;
+    font-size: 29px;
+}
+
+
+/* Estilo de la seccion de imagenes */
+
+.img-section {
+    text-align: center;
+    padding: 75px 0;
+}
+
+.imagenes {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.imagenes img {
+    width: 90%;
+    height: 280px;
+}
+
+
+/* Estilo del footer */
+
+footer {
+    background-color: #1E1A13;
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}

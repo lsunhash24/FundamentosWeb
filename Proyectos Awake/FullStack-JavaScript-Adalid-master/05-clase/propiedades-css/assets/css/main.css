@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/*  
+    Diseño Responsivo
+    Unidad de medida absoluta es :
+    px
+    Unidades de medida no absoluta:
+
+    %
+    rem
+    em
+    ex
+
+    0.5rem---->8px
+    1rem------> 16px
+    2rem------> 32px
+
+    COLOR
+    rgb(0,0,0) --> negro
+    rgb(255,0,0) Rojo
+    Red, Green, blue, alfa
+    rgba(255,0,0, 0.9);
+    Hexadecimal
+*/
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #dedede;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Selector Universal */
+body * {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+a:link, a:visited, a:active{
+    color: #F2F221;
+    text-decoration:underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-right: 1px solid #F2F221;
+    transition: all 1s ease-in-out;
+}
+
+a:hover{
+    color: #ffff;
+}
+
+ul{
+    list-style: none;
+    /* list-style-type: none; */
+}
+nav{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+p{
+    color: #ffff;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p{
+    margin: 1.5rem 0;
+    color: #F2F221;
+}
+
+/* Creamos nuestros selectores del tipo clase */
+.nav__lista{
+    padding: 1rem 0;
+}
+
+.nav__lista li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav__lista li a{
+    padding: 0 1rem;
+}
+
+/* Concepto de seudo clases */
+.nav__lista li:first-child a{
+    border-right: none;
+    font-size: 3rem;
+}
+
+/* Creamos nuestra grilla de construccion */
+.container{
+    max-width: 80%;
+    height: auto;
+    /* margin: 0 auto 0 auto; */
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    padding: 0 1rem 0 1rem;
+    /* background-color: green; */
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 33.3333333333%;
+    height: auto;
+    padding: 1rem 1.3rem;
+}
+
+.header{
+    background-color: #494949;
+    width: 100%;
+    height: 300px;
+    margin:3rem 0 2rem 0;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.card__Articulo{
+    width: 100%;
+    height: auto;
+    margin: 0 0 1rem 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+    background: #7d7e7d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.card__Articulo-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #494949;
+    border: 3px solid #F2F221;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.content__position{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    margin-top: 88px;
+}
+
+.content__position img{
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+.content__position-title{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__position-title h1, .content__position-title h2{
+    text-shadow: -4px 10px 10px rgba(0,0,0,0.7);
+}
+
+
